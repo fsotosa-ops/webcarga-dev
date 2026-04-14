@@ -10,6 +10,7 @@ build/
 dist/
 downloads/
 docs/
+source/
 qanalytics.html
 setup_extraction.sh
 AGENTLOG.md
