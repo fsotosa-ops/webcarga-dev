@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing Suite</title>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Ldj9MIUAAAAAEuP55OfOKReEw5gFzurnYO2rUiP"></script>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.wing.cl/v2/favicon.ico"/>
+    <link href="https://cdn.wing.cl/v2/wing_inicio_sesion/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.wing.cl/v2/wing_inicio_sesion/swiper.min.css"/>
+    <link rel="stylesheet" href="https://cdn.wing.cl/v2/wing_inicio_sesion/index.css"/>
+</head>
+<body>
+    <section>
+        <div class="row m-0 p-0 vh-100">
+            <div class="col-xl-9 col-lg-8 col-sm-6 m-0 p-0 d-sm-block d-none" id="imgs-header">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://cdn.wing.cl/v2/wing_inicio_sesion/img/1.jpg" class="vh-100" alt="Imagen 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.wing.cl/v2/wing_inicio_sesion/img/2.jpg" class="vh-100" alt="Imagen 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.wing.cl/v2/wing_inicio_sesion/img/3.jpg" class="vh-100" alt="Imagen 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.wing.cl/v2/wing_inicio_sesion/img/4.jpg" class="vh-100" alt="Imagen 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.wing.cl/v2/wing_inicio_sesion/img/5.jpg" class="vh-100" alt="Imagen 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.wing.cl/v2/wing_inicio_sesion/img/6.jpg" class="vh-100" alt="Imagen 6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://cdn.wing.cl/v2/wing_inicio_sesion/img/7.jpg" class="vh-100" alt="Imagen 7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-sm-6 m-0 p-0 d-flex align-items-center">
+                <form class="px-5 w-100 d-flex justify-content-center needs-validation" action="login.php" method="post">
+                    <div class="d-flex flex-column gap-3 w-100 text-center">
+                        <div>
+                            <img src="https://cdn.wing.cl/v2/wing_inicio_sesion/logo-wingsuite.png" width="250" alt="Logo WingSuite">
+                        </div>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Usuario" required>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
+                        <div>
+                            <button type="submit" class="btn btn-login w-100">Ingresar</button>
+                        </div>
+                        <div class="description text-center">
+                            <p>¿Tienes un viaje con nosotros? Haz el seguimiento <a href="https://suite.wing.cl/web/logistics/mod_clientes/seguimiento_despacho.php" target="_blank" >aquí</a></p>
+                            <p>¿Olvidó su contraseña? Click&nbsp<span data-bs-toggle="modal" data-bs-target="#modalRecuperacion">aquí</span>&nbsppara restaurar.</p>
+                            <hr>
+                            <p class="copyrigth">WEST Todos los derechos reservados 2024</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalRecuperacion" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content fondo">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title textos" id="myModalLabel" style="float: left;">Recuperar Contrase&ntilde;a</h5>
+                    <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" id="recuperaForm">
+                        <div class="col-lg-12" style="padding-left: 0px; padding-right: 0px;">
+                            <input type="text" class="form-control campo" id="username_recupera" placeholder="Ingrese su usuario" required>
+                        </div>
+                        <div class="d-flex pt-3 w-100 gap-1 justify-content-end">
+                            <button class="btn btn-login" type="submit" >Recuperar</button>
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.wing.cl/v2/wing_inicio_sesion/bootstrap.min.js"></script>
+    <script src="https://cdn.wing.cl/v2/wing_inicio_sesion/swiper.min.js"></script>
+    <script src="https://cdn.wing.cl/v2/js/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.wing.cl/v2/js/plugins/sweetalert2/sweetalert2.js"></script>
+    <script src="https://cdn.wing.cl/v2/wing_inicio_sesion/index.js"></script>
+    <script>
+        var error = "";
+        var msg = "";
+        var noCaptcha = "1";
+        var mobile = 0;
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Ldj9MIUAAAAAEuP55OfOKReEw5gFzurnYO2rUiP', {action: 'homepage'});
+        });
+
+        $(function () {
+            if (error == "warning" || error == "danger" || error == "success") {
+                Swal.fire({
+                    text: msg,
+                    type: "warning"
+                });
+            }
+            const formRecuperar = document.getElementById('recuperaForm');
+            formRecuperar.addEventListener('submit', function (event) {
+                event.preventDefault();
+                olvidoPass();
+            });
+            window.localStorage.clear();
+        });
+
+        function olvidoPass() {
+            const usuario = document.getElementById('username_recupera').value;
+            const formRecuperar = document.getElementById('recuperaForm');
+
+            $.post("core/mod_admin/ajax/index_ajax.php",{
+                accion  : "recuperar_password",
+                usuario : usuario.toUpperCase()
+            }, function (data) {
+                $('#modalRecuperacion').modal('hide');
+                Swal.fire({
+                    text: data.msg,
+                    type: data.status
+                });
+            }, 'json');
+            formRecuperar.reset();
+        }
+
+    </script>
+</body>
+</html>
+</html>

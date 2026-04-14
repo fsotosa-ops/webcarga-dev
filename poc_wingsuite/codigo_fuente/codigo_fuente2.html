@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing Suite</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.wing.cl/v2/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/bootstrap.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/animate.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/responsive-retina/component.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/responsive-retina/default.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/popOut/style.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/style.css?0099a8a33d33aefac833f6a914955e8c">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/jqueryui/smoothness/jquery-ui.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/chosen.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/select2/select2.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/font-awesome-5.13.0/css/all.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/font-awesome/6.1.2/css/all.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/icon-eventos/Eventos/fuentes/style.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/icomoon-gpssmart-font/style.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/icon-vehicles/style.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/font_bt.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/dataTables/datatables.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/chosen/bootstrap-chosen.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/tema.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/datepicker/bootstrap-datepicker.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/fullcalendar/fullcalendar.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/steps/jquery.steps.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/owl-carousel/owl.carousel.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/owl-carousel/owl.theme.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/owl-carousel/owl.transitions.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/pivot/2.23.0/pivot.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/webui-popover/jquery.webui-popover.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/btn-ayuda.css">
+                    <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/axios/0.19.2/axios.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/jquery-3.1.1.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/jquery-3.0.0.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/jquery-migrate-3.0.1.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/jquery-form/jquery.form.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/popper.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/bootstrap.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/inspinia.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/c3.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/d3.v3.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pace/pace.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/moment/2.27.0/moment-with-locales.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/moment-timezone/0.5.31/moment-timezone-with-data.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/datepicker/bootstrap-datetimepicker.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/alasql/v0.4.6/alasql.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/i18next/i18next-1.11.2.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/chosen/chosen.jquery.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/select2/select2.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/bootbox.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/sweetalert2/sweetalert2.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/blockui/jquery.blockUI.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/dataTables/datatables.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/dataTables/accent-neutralise.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/highcharts/8.2.0/highcharts.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/highcharts/8.2.0/exporting.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/highcharts/8.2.0/highcharts-more.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/popOut/modernizr.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/responsive-retina/modernizr.custom.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/funciones.js?0099a8a33d33aefac833f6a914955e8c"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/fullcalendar/fullcalendar.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/fullcalendar/locale/es.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/steps/jquery.steps.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/pivot.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/plotly-basic-latest.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/plotly-locale-es-latest.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/plotly_renderers.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/2.23.0/export_renderers.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/2.23.0/c3_renderers.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/2.23.0/d3_renderers.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/pivot.es.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/xlsx/0.16.4/xlsx.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/FileSaver/2.0.2/FileSaver.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/uuid/uuidv1.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/webui-popover/jquery.webui-popover.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/index.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/utilesReportes.js"></script>
+        
+<script>
+    var id_aplicacion = 1;
+
+    $(function () {
+        if('serviceWorker' in navigator){
+            let urlSw = `${window.localStorage.URL_CORE}sw.js`;
+            window.addEventListener('load', function() {
+                navigator.serviceWorker
+                    .register(urlSw)
+                    .then((result) => {
+                        //console.log("Service Worker Registered");
+                    }).catch((err) => {
+                        console.log('error en SW ->', err);
+                    });
+            });
+        }
+
+        check_last_version('fenix');
+        check_s_locale();
+                var avisos = obtener_avisos();
+        if(avisos.length > 0){
+            localStorage.setItem('AVISOS_MODULO',JSON.stringify(avisos));
+            funcionesTema.mostrarBienvenida();
+        }
+        if(id_aplicacion == 3 || id_aplicacion == 8) {
+            if(localStorage.USUARIO_TIPO != 0){
+                obtener_gpss();
+            } else {
+                obtener_vacio_gpss();
+                funcionesTema.cargarPaginaBd(1,2, '[]');
+            }
+        } else {
+            funcionesTema.cargarPaginaBd(1,2, '[]');
+        }
+        
+    });
+
+    function obtener_avisos(){
+        var avisos_mostrar  = [];
+        var avisos_actuales = [];
+
+        try {
+            avisos_actuales = JSON.parse(localStorage.AVISOS);
+        } catch (error) {
+            console.error(error);
+        }
+
+        for(i in avisos_actuales){
+            var aviso = avisos_actuales[i];
+            var aplicaciones = aviso.APLICACIONES.split(',');
+            var id_producto  = aviso.ID_PRODUCTO;
+            if(id_producto == 0){
+                if(!avisos_mostrar.some(k => k['ID'] === aviso.ID)){
+                    avisos_mostrar.push(aviso);
+                }
+            } else {
+                if(aplicaciones.includes(id_aplicacion.toString())){
+                    if(!avisos_mostrar.some(k => k['ID'] === aviso.ID)){
+                        avisos_mostrar.push(aviso);
+                    }
+                }
+            }
+        }
+        return avisos_mostrar;
+    }
+
+    async function obtener_gpss(){
+        funcionesTema.blockGlobal(true,'Cargando datos en memoria, por favor espere...');
+        var orgs = [];
+        if(!localStorage.hasOwnProperty('ORGS_GPSS_PRECARGADOS')){
+            orgs = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/organizacion.obtener/4.0.1`);
+            localStorage.setItem('ORGS_GPSS_PRECARGADOS', JSON.stringify(orgs));
+        } else{
+            if(JSON.parse(localStorage.ORGS_GPSS_PRECARGADOS).length == 0){
+                orgs = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/organizacion.obtener/4.0.1`);
+                localStorage.setItem('ORGS_GPSS_PRECARGADOS', JSON.stringify(orgs));
+            } else {
+                orgs = JSON.parse(localStorage.ORGS_GPSS_PRECARGADOS)
+            }
+        }
+
+        if(!localStorage.hasOwnProperty('ES_GPSS_PRECARGADOS')){
+            var empresas = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/web.empresa.precargar_prestamos_servicios/4.0.0`);
+            localStorage.setItem('ES_GPSS_PRECARGADOS', JSON.stringify(empresas));
+        } else {
+            if(JSON.parse(localStorage.ES_GPSS_PRECARGADOS).length == 0){
+                var empresas = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/web.empresa.precargar_prestamos_servicios/4.0.0`);
+                localStorage.setItem('ES_GPSS_PRECARGADOS', JSON.stringify(empresas));
+            } else {
+                var empresas = JSON.parse(localStorage.ES_GPSS_PRECARGADOS);
+                localStorage.setItem('ES_GPSS_PRECARGADOS', JSON.stringify(empresas));
+            }
+        }
+
+        if(!localStorage.hasOwnProperty('TIPO_MOVILES_GPSS_PRECARGADOS')){
+            var tm = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA}, `${localStorage.API_GPSS}/tipo_movil.obtener/2.0.0`);
+            localStorage.setItem('TIPO_MOVILES_GPSS_PRECARGADOS', JSON.stringify(tm));
+        } else {
+            if(JSON.parse(localStorage.TIPO_MOVILES_GPSS_PRECARGADOS).length == 0){
+                var tm = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA}, `${localStorage.API_GPSS}/tipo_movil.obtener/2.0.0`);
+                localStorage.setItem('TIPO_MOVILES_GPSS_PRECARGADOS', JSON.stringify(tm));
+            } else {
+                var tm = JSON.parse(localStorage.TIPO_MOVILES_GPSS_PRECARGADOS);
+                localStorage.setItem('TIPO_MOVILES_GPSS_PRECARGADOS', JSON.stringify(tm));
+            }
+        }
+
+        if(!localStorage.hasOwnProperty('MOVILES_GPSS_PRECARGADOS')){
+            var movs = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/web.empresa.precargar_moviles_usuario/4.0.0`);
+            localStorage.setItem('MOVILES_GPSS_PRECARGADOS', JSON.stringify(movs));
+        } else{
+            if(JSON.parse(localStorage.MOVILES_GPSS_PRECARGADOS).length == 0){
+                var movs = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/web.empresa.precargar_moviles_usuario/4.0.0`);
+                localStorage.setItem('MOVILES_GPSS_PRECARGADOS', JSON.stringify(movs));
+            } else {
+                var movs = JSON.parse(localStorage.MOVILES_GPSS_PRECARGADOS)
+            }
+        }
+        funcionesTema.blockGlobal(false);
+        funcionesTema.cargarPaginaBd(1,2, '[]');
+    }
+
+    function obtener_vacio_gpss(){
+        localStorage.setItem('ORGS_GPSS_PRECARGADOS', '[]');
+        localStorage.setItem('ES_GPSS_PRECARGADOS', '[]');
+        localStorage.setItem('TIPO_MOVILES_GPSS_PRECARGADOS', '[]');
+        localStorage.setItem('MOVILES_GPSS_PRECARGADOS', '[]');
+    }
+
+    async function obtener_get_tx(param, url){
+        try {
+            let data  = await tx.request({url : url ,method : "GET", params : param});
+            return (data.response.resp != null) ? data.response.resp : [];
+        } catch (error) {
+            console.error(error)
+            return []
+        }
+    }
+
+    async function obtener_post_tx(param, url){
+        var config = {
+            url: url,
+            method: 'POST',
+            body: param
+        }
+        try {
+            var data = await tx.request(config)
+            var resp = (data.response.resp != null) ? data.response.resp : [];
+            return resp
+        } catch (error) {
+            console.error(error)
+            return [];
+        }
+    }
+
+</script></head>
+<body class="fixed-sidebar ">
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse" >
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element text-center">
+                    <img src="https://cdn.wing.cl/v2/img/productos/modulos/white/gps-wing-admin.svg" class="mb-3" height="50" id="logo-modulo-mlateral" />
+                    <span class="text-xs block text-white font-bold">Admin</span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#" data-i18n="[title]titulos.verPersonal">
+                        <span class="block m-t-xs font-bold"></span>
+                        <span class="text-xs block text-white">
+                            Fabian Mendez Ramos                            <b class="caret"></b>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs" x-placement="top-start" style="position: absolute; top: 28px; left: 0px; will-change: top, left;">
+                        <li>
+                            <a class="dropdown-item" href="#" onclick="funcionesTema.cargarPaginaBd(1, 41)">
+                                <span data-i18n="pagina.verdatos"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="logout.php"><span data-i18n="pagina.cerrar_sesion"></span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="index.php?id_app=1">
+                    <i class="fa-solid fa-house-chimney no-display"></i>
+                    <span class="nav-label">Inicio</span>
+                </a>
+                                <li>
+                    <a href="#">
+                        <i class="fa fa-cube"></i>
+                        <span class="nav-label">Administración General</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                                    <ul class="nav nav-second-level collapse" aria-expanded="false">
+                        <li>
+                            <a href="#" class="tema-pagina" onClick="funcionesTema.cargarPaginaBd('1','30026')">Mantenedor de Organigrama</a>
+                        </li>
+                    </ul>
+                                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                        <li>
+                            <a href="#" class="tema-pagina" onClick="funcionesTema.cargarPaginaBd('1','500009')">Administracion de Usuarios - Org</a>
+                        </li>
+                    </ul>
+                                    <li>
+                    <a href="#">
+                        <i class="fa gpsmart-documentation-management"></i>
+                        <span class="nav-label">Recursos</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                                    <ul class="nav nav-second-level collapse" aria-expanded="false">
+                        <li>
+                            <a href="#" class="tema-pagina" onClick="funcionesTema.cargarPaginaBd('1','500008')">Administración de Móviles - Org</a>
+                        </li>
+                    </ul>
+                                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                        <li>
+                            <a href="#" class="tema-pagina" onClick="funcionesTema.cargarPaginaBd('1','500011')">Administración de Tipos de Móviles por Categoría</a>
+                        </li>
+                    </ul>
+                                        <ul class="nav nav-second-level collapse" aria-expanded="false">
+                        <li>
+                            <a href="#" class="tema-pagina" onClick="funcionesTema.cargarPaginaBd('1','500010')">Administracion de Personal - Org</a>
+                        </li>
+                    </ul>
+                            </li>
+                    </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg">
+    <div class="row border-bottom">
+        <nav class="navbar navbar-static-top bg-white" role="navigation">
+            <div class="navbar-header navbar-left">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" data-i18n="[title]pagina.cambio_barra" href="#"><i class="fa fa-bars"></i> </a>
+                <a class="minimalize-styl-2 btn btn-dark" style="display: none;" id="btn-filtro" href="#" onclick="funcionesTema.toggleFiltro();">
+                    <i class="fa fa-filter"></i>
+                </a>
+                <span class="m-r-sm text-muted welcome-message"></span>
+            </div>
+            <ul class="nav navbar-top-links nav-right hide-768">
+                <li>
+                    <a href="javascript:window.location.reload(true)" style="text-transform:uppercase;" id="barra_nombre_reporte"></a>
+                </li>
+            </ul>
+            <ul class="nav navbar-top-links navbar-bottom">
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" onClick="ver_notificaciones('')"  href="#">
+                        <i class="fa fa-bell" data-i18n="[title]pagina.notificaciones"></i>
+                        <span class="label label-primary" id="notificaciones_cant" style="display:none"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts" id="ul_notificaciones" style="padding: 0px !important; margin: 0px !important">
+                        <div id="contenedor_notificaciones"></div>
+                        <div>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a class="dropdown-item" onClick="funcionesTema.cargarPaginaBd(1,53)">
+                                        <strong>Ver reporte de notificaciones</strong>
+                                    </a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-flag"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#" onclick="funcionesTema.cambiarIdioma('es')">Español</a></li>
+                        <li class="dropdown-item"><a href="#" onclick="funcionesTema.cambiarIdioma('en')">English</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" id="navbarDropdownNindeDots" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+        <circle cx="2" cy="8" r="2" fill="currentColor"></circle>
+        <circle cx="2" cy="14" r="2" fill="currentColor"></circle>
+        <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+        <circle cx="8" cy="14" r="2" fill="currentColor"></circle>
+        <circle cx="14" cy="8" r="2" fill="currentColor"></circle>
+        <circle cx="14" cy="14" r="2" fill="currentColor"></circle>
+        <circle cx="8" cy="2" r="2" fill="currentColor"></circle>
+        <circle cx="14" cy="2" r="2" fill="currentColor"></circle>
+    </svg>
+</a>
+<div class="dropdown-menu dropdown-menu-right navbar-dropdown-caret py-0 dropdown-nide-dots shadow border border-300" id="menu-drop" aria-labelledby="navbarDropdownNindeDots">
+    <div class="card bg-white position-relative border-0">
+        <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar">
+            <div class="row text-center align-items-center no-gutters">
+                <div class="col-12 font-bold mb-3">Productos</div>
+            </div>
+            <div id="box-productos" class="row text-center align-items-center no-gutters">
+            </div>
+            <hr class="mx-2 my-3">
+            <div class="row text-center align-items-center no-gutters mt-2">
+                <div class="col-12 font-bold mb-3" id="name-modulo"></div>
+            </div>
+            <div id="box-modulos" class="row text-center align-items-center no-gutters mb-3"></div>
+        </div>
+    </div>
+</div>                </li>
+                <li class="ayuda_pagina"></li>
+                <li>
+                    <a href="logout.php">
+                        <i class="fa fa fa-sign-out"></i>
+                        <span class="nav-label" id="text-logout" data-i18n="pagina.cerrar_sesion">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="div_content"  class="row" style="min-height: inherit;">
+        <div class="col-lg-12">
+            <div id="page-content" class="wrapper wrapper-content">
+                <div class="row"></div>
+            </div>
+        </div>
+    </div>
+    <div id="modal_generico" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg"><div id="modal_content" class="modal-content"></div></div>
+    </div>
+    <div id="modal_generico_small" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm"><div id="modal_content_small" class="modal-content"></div></div>
+    </div>
+</div><div estado="contraido" id="BotonAyuda" class="boton-ayuda btn-primary" onclick="pressBotonAyuda()">
+    <div class="d-flex">
+        <img src="resources/mascota_west.png" alt="Mascota West">
+        <p id="nsc">¿Necesitas ayuda?</p>
+    </div>
+</div></div></body>
+</html>

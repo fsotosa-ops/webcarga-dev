@@ -1,0 +1,16 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.env
+*.json
+.DS_Store
+*.egg-info/
+build/
+dist/
+downloads/
+docs/
+qanalytics.html
+setup_extraction.sh
+AGENTLOG.md
+CLAUDE.md
