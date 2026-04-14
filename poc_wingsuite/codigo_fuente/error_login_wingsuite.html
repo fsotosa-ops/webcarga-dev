@@ -1,0 +1,797 @@
+<!DOCTYPE html><html lang="es" style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing Suite</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.wing.cl/v2/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/bootstrap.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/animate.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/responsive-retina/component.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/responsive-retina/default.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/popOut/style.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/style.css?f5b40fd08f9947906e95fe6a7d86d0d3">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/jqueryui/smoothness/jquery-ui.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/chosen.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/select2/select2.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/font-awesome-5.13.0/css/all.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/font-awesome/6.1.2/css/all.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/icon-eventos/Eventos/fuentes/style.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/icomoon-gpssmart-font/style.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/fonts/icon-vehicles/style.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/font_bt.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/dataTables/datatables.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/chosen/bootstrap-chosen.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/tema.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/datepicker/bootstrap-datepicker.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/fullcalendar/fullcalendar.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/steps/jquery.steps.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/owl-carousel/owl.carousel.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/owl-carousel/owl.theme.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/owl-carousel/owl.transitions.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/pivot/2.23.0/pivot.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/plugins/webui-popover/jquery.webui-popover.min.css">
+                <link rel="stylesheet" type="text/css" href="https://cdn.wing.cl/v2/css/btn-ayuda.css">
+                    <script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/axios/0.19.2/axios.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/jquery-3.1.1.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/jquery-3.0.0.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/jquery-migrate-3.0.1.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/jquery-form/jquery.form.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/popper.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/bootstrap.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/inspinia.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/c3.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/d3.v3.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pace/pace.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/moment/2.27.0/moment-with-locales.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/moment-timezone/0.5.31/moment-timezone-with-data.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/datepicker/bootstrap-datetimepicker.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/alasql/v0.4.6/alasql.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/i18next/i18next-1.11.2.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/chosen/chosen.jquery.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/select2/select2.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/bootbox.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/sweetalert2/sweetalert2.js"></script><style>@charset "UTF-8";@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon::before{display:flex;align-items:center;font-size:2em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon::before{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;outline:initial;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range{margin:1em auto;background:inherit}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{background:inherit;font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center;background:inherit}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon::before{display:flex;align-items:center;height:92%;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-warning::before{content:'!'}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-info::before{content:'i'}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-question::before{content:'?'}.swal2-icon.swal2-question.swal2-arabic-question-mark::before{content:'؟'}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progress-steps{align-items:center;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#3085d6}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}</style>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/blockui/jquery.blockUI.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/dataTables/datatables.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/dataTables/dataTables.bootstrap4.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/dataTables/accent-neutralise.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/highcharts/8.2.0/highcharts.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/highcharts/8.2.0/exporting.js"></script><link href="https://fonts.googleapis.com/css?family=Dosis:400,600" rel="stylesheet" type="text/css">
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/highcharts/8.2.0/highcharts-more.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/popOut/modernizr.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/responsive-retina/modernizr.custom.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/funciones.js?f5b40fd08f9947906e95fe6a7d86d0d3"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/fullcalendar/fullcalendar.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/fullcalendar/locale/es.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/steps/jquery.steps.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/pivot.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/plotly-basic-latest.min.js"></script><style id="plotly.js-style-global"></style>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/plotly-locale-es-latest.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/plotly_renderers.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/2.23.0/export_renderers.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/2.23.0/c3_renderers.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/2.23.0/d3_renderers.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/pivot/pivot.es.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/xlsx/0.16.4/xlsx.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/FileSaver/2.0.2/FileSaver.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/uuid/uuidv1.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/plugins/webui-popover/jquery.webui-popover.min.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/index.js"></script>
+                <script type="text/javascript" src="https://cdn.wing.cl/v2/js/utilesReportes.js"></script>
+        
+<script>
+    var id_aplicacion = 5;
+
+    $(function () {
+        if('serviceWorker' in navigator){
+            let urlSw = `${window.localStorage.URL_CORE}sw.js`;
+            window.addEventListener('load', function() {
+                navigator.serviceWorker
+                    .register(urlSw)
+                    .then((result) => {
+                        //console.log("Service Worker Registered");
+                    }).catch((err) => {
+                        console.log('error en SW ->', err);
+                    });
+            });
+        }
+
+        check_last_version('fenix');
+        check_s_locale();
+                var avisos = obtener_avisos();
+        if(avisos.length > 0){
+            localStorage.setItem('AVISOS_MODULO',JSON.stringify(avisos));
+            funcionesTema.mostrarBienvenida();
+        }
+        if(id_aplicacion == 3 || id_aplicacion == 8) {
+            if(localStorage.USUARIO_TIPO != 0){
+                obtener_gpss();
+            } else {
+                obtener_vacio_gpss();
+                funcionesTema.cargarPaginaBd(5,18, '[]');
+            }
+        } else {
+            funcionesTema.cargarPaginaBd(5,18, '[]');
+        }
+        
+    });
+
+    function obtener_avisos(){
+        var avisos_mostrar  = [];
+        var avisos_actuales = [];
+
+        try {
+            avisos_actuales = JSON.parse(localStorage.AVISOS);
+        } catch (error) {
+            console.error(error);
+        }
+
+        for(i in avisos_actuales){
+            var aviso = avisos_actuales[i];
+            var aplicaciones = aviso.APLICACIONES.split(',');
+            var id_producto  = aviso.ID_PRODUCTO;
+            if(id_producto == 0){
+                if(!avisos_mostrar.some(k => k['ID'] === aviso.ID)){
+                    avisos_mostrar.push(aviso);
+                }
+            } else {
+                if(aplicaciones.includes(id_aplicacion.toString())){
+                    if(!avisos_mostrar.some(k => k['ID'] === aviso.ID)){
+                        avisos_mostrar.push(aviso);
+                    }
+                }
+            }
+        }
+        return avisos_mostrar;
+    }
+
+    async function obtener_gpss(){
+        funcionesTema.blockGlobal(true,'Cargando datos en memoria, por favor espere...');
+        var orgs = [];
+        if(!localStorage.hasOwnProperty('ORGS_GPSS_PRECARGADOS')){
+            orgs = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/organizacion.obtener/4.0.1`);
+            localStorage.setItem('ORGS_GPSS_PRECARGADOS', JSON.stringify(orgs));
+        } else{
+            if(JSON.parse(localStorage.ORGS_GPSS_PRECARGADOS).length == 0){
+                orgs = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/organizacion.obtener/4.0.1`);
+                localStorage.setItem('ORGS_GPSS_PRECARGADOS', JSON.stringify(orgs));
+            } else {
+                orgs = JSON.parse(localStorage.ORGS_GPSS_PRECARGADOS)
+            }
+        }
+
+        if(!localStorage.hasOwnProperty('ES_GPSS_PRECARGADOS')){
+            var empresas = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/web.empresa.precargar_prestamos_servicios/4.0.0`);
+            localStorage.setItem('ES_GPSS_PRECARGADOS', JSON.stringify(empresas));
+        } else {
+            if(JSON.parse(localStorage.ES_GPSS_PRECARGADOS).length == 0){
+                var empresas = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/web.empresa.precargar_prestamos_servicios/4.0.0`);
+                localStorage.setItem('ES_GPSS_PRECARGADOS', JSON.stringify(empresas));
+            } else {
+                var empresas = JSON.parse(localStorage.ES_GPSS_PRECARGADOS);
+                localStorage.setItem('ES_GPSS_PRECARGADOS', JSON.stringify(empresas));
+            }
+        }
+
+        if(!localStorage.hasOwnProperty('TIPO_MOVILES_GPSS_PRECARGADOS')){
+            var tm = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA}, `${localStorage.API_GPSS}/tipo_movil.obtener/2.0.0`);
+            localStorage.setItem('TIPO_MOVILES_GPSS_PRECARGADOS', JSON.stringify(tm));
+        } else {
+            if(JSON.parse(localStorage.TIPO_MOVILES_GPSS_PRECARGADOS).length == 0){
+                var tm = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA}, `${localStorage.API_GPSS}/tipo_movil.obtener/2.0.0`);
+                localStorage.setItem('TIPO_MOVILES_GPSS_PRECARGADOS', JSON.stringify(tm));
+            } else {
+                var tm = JSON.parse(localStorage.TIPO_MOVILES_GPSS_PRECARGADOS);
+                localStorage.setItem('TIPO_MOVILES_GPSS_PRECARGADOS', JSON.stringify(tm));
+            }
+        }
+
+        if(!localStorage.hasOwnProperty('MOVILES_GPSS_PRECARGADOS')){
+            var movs = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/web.empresa.precargar_moviles_usuario/4.0.0`);
+            localStorage.setItem('MOVILES_GPSS_PRECARGADOS', JSON.stringify(movs));
+        } else{
+            if(JSON.parse(localStorage.MOVILES_GPSS_PRECARGADOS).length == 0){
+                var movs = await obtener_get_tx({"id_empresa" : localStorage.ID_EMPRESA, "usuario" : localStorage.USUARIO}, `${localStorage.API_GPSS}/web.empresa.precargar_moviles_usuario/4.0.0`);
+                localStorage.setItem('MOVILES_GPSS_PRECARGADOS', JSON.stringify(movs));
+            } else {
+                var movs = JSON.parse(localStorage.MOVILES_GPSS_PRECARGADOS)
+            }
+        }
+        funcionesTema.blockGlobal(false);
+        funcionesTema.cargarPaginaBd(5,18, '[]');
+    }
+
+    function obtener_vacio_gpss(){
+        localStorage.setItem('ORGS_GPSS_PRECARGADOS', '[]');
+        localStorage.setItem('ES_GPSS_PRECARGADOS', '[]');
+        localStorage.setItem('TIPO_MOVILES_GPSS_PRECARGADOS', '[]');
+        localStorage.setItem('MOVILES_GPSS_PRECARGADOS', '[]');
+    }
+
+    async function obtener_get_tx(param, url){
+        try {
+            let data  = await tx.request({url : url ,method : "GET", params : param});
+            return (data.response.resp != null) ? data.response.resp : [];
+        } catch (error) {
+            console.error(error)
+            return []
+        }
+    }
+
+    async function obtener_post_tx(param, url){
+        var config = {
+            url: url,
+            method: 'POST',
+            body: param
+        }
+        try {
+            var data = await tx.request(config)
+            var resp = (data.response.resp != null) ? data.response.resp : [];
+            return resp
+        } catch (error) {
+            console.error(error)
+            return [];
+        }
+    }
+
+</script></head>
+<body class="fixed-sidebar skin-logis   pace-done" style=""><div class="pace  pace-inactive"><div class="pace-progress" style="transform: translate3d(100%, 0px, 0px);" data-progress-text="100%" data-progress="99">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="sidebar-collapse" style="overflow: hidden; width: auto; height: 100%;">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element text-center">
+                    <img src="https://cdn.wing.cl/v2/img/productos/modulos/white/gpsmart-op-logistica.svg" class="mb-3" height="50" id="logo-modulo-mlateral">
+                    <span class="text-xs block text-white font-bold">Operación Logística</span>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#" data-i18n="[title]titulos.verPersonal" title="Ver Datos Personales del Usuario">
+                        <span class="block m-t-xs font-bold"></span>
+                        <span class="text-xs block text-white">
+                            Fabian Mendez Ramos                            <b class="caret"></b>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs" x-placement="top-start" style="position: absolute; top: 28px; left: 0px; will-change: top, left;">
+                        <li>
+                            <a class="dropdown-item" href="#" onclick="funcionesTema.cargarPaginaBd(1, 41)">
+                                <span data-i18n="pagina.verdatos">Mis Datos Personales</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="logout.php"><span data-i18n="pagina.cerrar_sesion">Cerrar Sesión</span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="index.php?id_app=5" aria-expanded="false">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span class="nav-label">Inicio</span>
+                </a>
+                                </li><li class="active">
+                    <a href="#" aria-expanded="true">
+                        <i class="fa fa-file-text"></i>
+                        <span class="nav-label">Reportes</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                                    <ul class="nav nav-second-level collapse in" aria-expanded="true" style="">
+                        <li>
+                            <a href="#" class="tema-pagina" onclick="funcionesTema.cargarPaginaBd('5','4134')">Reporte Completo de Viajes por Transportista</a>
+                        </li>
+                    </ul>
+                                        <ul class="nav nav-second-level collapse in" aria-expanded="true" style="">
+                        <li>
+                            <a href="#" class="tema-pagina" onclick="funcionesTema.cargarPaginaBd('5','50051')">Reporte de Viajes de Transportistas</a>
+                        </li>
+                    </ul>
+                            </li>
+                    
+        </ul>
+    </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 768px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.9; z-index: 90; right: 1px;"></div></div>
+</nav>
+
+<div id="page-wrapper" class="gray-bg" style="max-height: 707px;">
+    <div class="row border-bottom">
+        <nav class="navbar navbar-static-top bg-white" role="navigation">
+            <div class="navbar-header navbar-left">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" data-i18n="[title]pagina.cambio_barra" href="#" title="Mostrar/ocultar barra de funcionalidades"><i class="fa fa-bars"></i> </a>
+                <a class="minimalize-styl-2 btn btn-dark" style="" id="btn-filtro" href="#" onclick="funcionesTema.toggleFiltro();">
+                    <i class="fa fa-filter"></i>
+                </a>
+                <span class="m-r-sm text-muted welcome-message"></span>
+            </div>
+            <ul class="nav navbar-top-links nav-right hide-768">
+                <li>
+                    <a href="javascript:window.location.reload(true)" style="text-transform:uppercase;" id="barra_nombre_reporte">Reporte Completo de Viajes por Transportista</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-top-links navbar-bottom">
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" onclick="ver_notificaciones('')" href="#">
+                        <i class="fa fa-bell" data-i18n="[title]pagina.notificaciones" title="Notificaciones"></i>
+                        <span class="label label-primary" id="notificaciones_cant" style="display:none"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts" id="ul_notificaciones" style="padding: 0px !important; margin: 0px !important">
+                        <div id="contenedor_notificaciones"></div>
+                        <div>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a class="dropdown-item" onclick="funcionesTema.cargarPaginaBd(1,53)">
+                                        <strong>Ver reporte de notificaciones</strong>
+                                    </a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-flag"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#" onclick="funcionesTema.cambiarIdioma('es')">Español</a></li>
+                        <li class="dropdown-item"><a href="#" onclick="funcionesTema.cambiarIdioma('en')">English</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" id="navbarDropdownNindeDots" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+        <circle cx="2" cy="8" r="2" fill="currentColor"></circle>
+        <circle cx="2" cy="14" r="2" fill="currentColor"></circle>
+        <circle cx="8" cy="8" r="2" fill="currentColor"></circle>
+        <circle cx="8" cy="14" r="2" fill="currentColor"></circle>
+        <circle cx="14" cy="8" r="2" fill="currentColor"></circle>
+        <circle cx="14" cy="14" r="2" fill="currentColor"></circle>
+        <circle cx="8" cy="2" r="2" fill="currentColor"></circle>
+        <circle cx="14" cy="2" r="2" fill="currentColor"></circle>
+    </svg>
+</a>
+<div class="dropdown-menu dropdown-menu-right navbar-dropdown-caret py-0 dropdown-nide-dots shadow border border-300" id="menu-drop" aria-labelledby="navbarDropdownNindeDots">
+    <div class="card bg-white position-relative border-0">
+        <div class="card-body pt-3 px-3 pb-0 overflow-auto scrollbar">
+            <div class="row text-center align-items-center no-gutters">
+                <div class="col-12 font-bold mb-3">Productos</div>
+            </div>
+            <div id="box-productos" class="row text-center align-items-center no-gutters">
+            <div class="col-4 hover-bg-200" onclick="funcionesCargaHTML.crearModulos(event, 'core')" id="core">
+                <a class="d-block p-2 rounded-3 text-center mb-3">
+                    <img src="https://cdn.wing.cl/v2/img/productos/core.svg" alt="" width="30">
+                    <p class="mb-0 text-truncate text-black mt-1 pt-1 text-decoration-none text-box-productos">Administración</p>
+                </a>
+            </div>
+        
+            <div class="col-4 hover-bg-200" onclick="funcionesCargaHTML.crearModulos(event, 'gpssmart')" id="gpssmart">
+                <a class="d-block p-2 rounded-3 text-center mb-3">
+                    <img src="https://cdn.wing.cl/v2/img/productos/icon-gpssmart.svg" alt="" width="30">
+                    <p class="mb-0 text-truncate text-black mt-1 pt-1 text-decoration-none text-box-productos">GPSSmart</p>
+                </a>
+            </div>
+        
+            <div class="col-4 hover-bg-200" onclick="funcionesCargaHTML.crearModulos(event, 'docs')" id="docs">
+                <a class="d-block p-2 rounded-3 text-center mb-3">
+                    <img src="https://cdn.wing.cl/v2/img/productos/icon-wingdocs.svg" alt="" width="30">
+                    <p class="mb-0 text-truncate text-black mt-1 pt-1 text-decoration-none text-box-productos">Wing Docs</p>
+                </a>
+            </div>
+        
+            <div class="col-4 hover-bg-200" onclick="funcionesCargaHTML.crearModulos(event, 'logistics')" id="logistics">
+                <a class="d-block p-2 rounded-3 text-center mb-3">
+                    <img src="https://cdn.wing.cl/v2/img/productos/icon-winglogistics.svg" alt="" width="30">
+                    <p class="mb-0 text-truncate text-black mt-1 pt-1 text-decoration-none text-box-productos">Wing Logistics</p>
+                </a>
+            </div>
+        </div>
+            <hr class="mx-2 my-3">
+            <div class="row text-center align-items-center no-gutters mt-2">
+                <div class="col-12 font-bold mb-3" id="name-modulo"></div>
+            </div>
+            <div id="box-modulos" class="row text-center align-items-center no-gutters mb-3"></div>
+        </div>
+    </div>
+</div>                </li>
+                <li class="ayuda_pagina"><a href="#" onclick="javascript:window.open('ayuda.php?modulo=5&amp;funcionalidad=4134','Ayuda','width=1366,height=768')" title="¿Cómo usar esta herramienta?"><i class="fa fa-question-circle"></i><span class="nav-label" id="text-ayuda">Ayuda</span></a></li>
+                <li>
+                    <a href="logout.php">
+                        <i class="fa fa fa-sign-out"></i>
+                        <span class="nav-label" id="text-logout" data-i18n="pagina.cerrar_sesion">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="div_content" class="row" style="min-height: inherit;">
+        <div class="col-lg-12">
+            <div id="page-content" class="wrapper wrapper-content">		<script>
+			$("#titulo_pagina").html('<div class="row wrapper border-bottom white-bg page-heading"><div class="col-lg-12"><h4>Reporte Completo de Viajes por Transportista</h4></div></div>');
+		</script>
+		<style type="text/css">
+    .right_01 {
+        text-align: right !important;
+    }
+</style>
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-filtro">
+        <div class="ibox float-e-margins" id="panel_filtros">
+            <div class="ibox-title" style="cursor: pointer;">
+                <label data-i18n="pagina.filtros">Filtros</label>
+            <div class="ibox-tools"><a class="collapse-link"></a></div></div>
+            <div class="ibox-content" id="filtros_movil">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="f_id_empresa" data-i18n="filtros.empresa">Empresa</label>
+                            <select class="form-control chosen select2-hidden-accessible" name="f_id_empresa" id="f_id_empresa" data-select2-id="f_id_empresa" tabindex="-1" aria-hidden="true" onchange="cargar_mandantes();">
+                                                            <option value="105765" data-select2-id="17">TRANSPORTES WEBCARGA - 76.376.879-1</option></select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="53" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-f_id_empresa-container"><span class="select2-selection__rendered" id="select2-f_id_empresa-container" role="textbox" aria-readonly="true" title="TRANSPORTES WEBCARGA - 76.376.879-1">TRANSPORTES WEBCARGA - 76.376.879-1</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label data-i18n="filtros.empresa_mandante">Empresa mandante</label>
+                            <select class="form-control chosen select2-hidden-accessible" id="f_mandante" data-select2-id="f_mandante" tabindex="-1" aria-hidden="true" onchange="cargarPlantillas();cargarTurnos();">
+                                
+                            <option value="0" data-select2-id="19">Todos</option><option value="281" data-select2-id="33">COLUN - 81.094.100-6</option><option value="27000" data-select2-id="34">WALMART CHILE SA - 76.042.014-K</option></select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="54" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-f_mandante-container"><span class="select2-selection__rendered" id="select2-f_mandante-container" role="textbox" aria-readonly="true" title="Todos">Todos</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="plantilla" data-i18n="func.nuevoviaje.plantilla">Plantilla</label>
+                            <select class="chosen obligatorio select2-hidden-accessible" id="plantilla" data-content="Campo obligatorio" data-placement="bottom" check="S" data-select2-id="plantilla" tabindex="-1" aria-hidden="true"><option value="0" data-select2-id="49">Todos</option></select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="55" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-plantilla-container"><span class="select2-selection__rendered" id="select2-plantilla-container" role="textbox" aria-readonly="true" title="Todos">Todos</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="accion" data-i18n="tablas.accion">Acción</label>
+                            <select class="chosen obligatorio select2-hidden-accessible" id="accion" data-content="Campo obligatorio" data-placement="bottom" check="S" data-select2-id="accion" tabindex="-1" aria-hidden="true">
+                                <option value="0" data-select2-id="14">Todos</option>
+                            <option value="1" data-select2-id="27">Carga</option><option value="2" data-select2-id="28">Descarga</option><option value="3" data-select2-id="29">Control</option></select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="56" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-accion-container"><span class="select2-selection__rendered" id="select2-accion-container" role="textbox" aria-readonly="true" title="Todos">Todos</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="turno" data-i18n="filtros.turno" name="turno">Turno</label>
+                            <select class="chosen obligatorio select2-hidden-accessible" id="turno" data-content="Campo obligatorio" data-placement="bottom" check="S" data-select2-id="turno" tabindex="-1" aria-hidden="true"><option value="0" data-select2-id="45">Todos</option></select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="57" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-turno-container"><span class="select2-selection__rendered" id="select2-turno-container" role="textbox" aria-readonly="true" title="Todos">Todos</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="fecha_inicio" data-i18n="filtros.fechainicio">Fecha Inicio</label>
+                            <input id="fecha_inicio" class="form-control fecha obtenercampo" data-formato="DD-MM-YYYY" value="01-04-2026" autocomplete="off" type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="fecha_fin" data-i18n="filtros.fechafin">Fecha Término</label>
+                            <input id="fecha_fin" class="form-control fecha obtenercampo" data-formato="DD-MM-YYYY" value="30-04-2026" autocomplete="off" type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <button class="btn btn-primary boton_envio btn-block" onclick="buscar_listado();" data-i18n="btns.desplegardatos">Ver Datos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-9 col-md-9" id="col-contenido">
+        <div id="contenedor_datos" style="">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title" style="cursor: pointer;"><label id="listado_label">Listado de Viajes de la Empresa de Transporte "TRANSPORTES WEBCARGA"</label><div class="ibox-tools"><a class="collapse-link"></a></div></div>
+                <div class="dataTables_scroll"><div class="ibox-content" id="div_datos"><div id="DataTables_Table_0_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"><div class="html5buttons"><div class="dt-buttons btn-group"><a class="btn btn-default buttons-copy buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Copiar</span></a><a class="btn btn-default buttons-excel buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Excel</span></a><a class="btn btn-default buttons-csv buttons-html5" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>CSV</span></a><a class="btn btn-default" tabindex="0" aria-controls="DataTables_Table_0" href="#"><span>Dinámica</span></a></div></div><div class="dataTables_length" id="DataTables_Table_0_length"><label>Mostrar <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option><option value="-1">Todos</option></select> registros</label></div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>Buscar:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_0"></label></div><div class="dataTables_scroll"><table class="table compact table-striped table-bordered table-hover nowrap undefined dataTable no-footer" style="width: 100%;" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info"><thead><tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-sort="ascending" aria-label="N°: Activar para ordenar la columna de manera descendente">N°</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Id Viaje: Activar para ordenar la columna de manera ascendente">Id Viaje</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Plantilla: Activar para ordenar la columna de manera ascendente">Plantilla</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Código Viaje: Activar para ordenar la columna de manera ascendente">Código Viaje</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Estado Viaje: Activar para ordenar la columna de manera ascendente">Estado Viaje</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Programa: Activar para ordenar la columna de manera ascendente">Fecha Programa</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Creación: Activar para ordenar la columna de manera ascendente">Fecha Creación</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Ejecución: Activar para ordenar la columna de manera ascendente">Fecha Ejecución</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Rut Empresa Mandante: Activar para ordenar la columna de manera ascendente">Rut Empresa Mandante</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Empresa Mandante: Activar para ordenar la columna de manera ascendente">Empresa Mandante</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Rut Empresa Tta.: Activar para ordenar la columna de manera ascendente">Rut Empresa Tta.</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Empresa Tta.: Activar para ordenar la columna de manera ascendente">Empresa Tta.</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Patente Móvil: Activar para ordenar la columna de manera ascendente">Patente Móvil</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Código Móvil: Activar para ordenar la columna de manera ascendente">Código Móvil</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Alias Móvil: Activar para ordenar la columna de manera ascendente">Alias Móvil</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Rut Conductor: Activar para ordenar la columna de manera ascendente">Rut Conductor</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Nombre Conductor: Activar para ordenar la columna de manera ascendente">Nombre Conductor</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Apellido Conductor: Activar para ordenar la columna de manera ascendente">Apellido Conductor</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Cantidad de Peonetas: Activar para ordenar la columna de manera ascendente">Cantidad de Peonetas</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Turno: Activar para ordenar la columna de manera ascendente">Turno</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Estado Lugar: Activar para ordenar la columna de manera ascendente">Estado Lugar</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Llegada Programada: Activar para ordenar la columna de manera ascendente">Fecha Llegada Programada</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Llegada Real: Activar para ordenar la columna de manera ascendente">Fecha Llegada Real</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fuente Dato Llegada Real: Activar para ordenar la columna de manera ascendente">Fuente Dato Llegada Real</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Cumple OTA: Activar para ordenar la columna de manera ascendente">Cumple OTA</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Salida Programada: Activar para ordenar la columna de manera ascendente">Fecha Salida Programada</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Salida Real: Activar para ordenar la columna de manera ascendente">Fecha Salida Real</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fuente Dato Salida Real: Activar para ordenar la columna de manera ascendente">Fuente Dato Salida Real</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Cumple OTD: Activar para ordenar la columna de manera ascendente">Cumple OTD</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Estadía Programada: Activar para ordenar la columna de manera ascendente">Estadía Programada</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Estadía Real: Activar para ordenar la columna de manera ascendente">Estadía Real</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Acción: Activar para ordenar la columna de manera ascendente">Acción</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Nombre Lugar: Activar para ordenar la columna de manera ascendente">Nombre Lugar</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Código Lugar: Activar para ordenar la columna de manera ascendente">Código Lugar</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Tipo Lugar: Activar para ordenar la columna de manera ascendente">Tipo Lugar</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Rut Cliente: Activar para ordenar la columna de manera ascendente">Rut Cliente</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Nombre Cliente: Activar para ordenar la columna de manera ascendente">Nombre Cliente</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Dirección Sucursal: Activar para ordenar la columna de manera ascendente">Dirección Sucursal</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Código Sucursal: Activar para ordenar la columna de manera ascendente">Código Sucursal</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Región Sucursal: Activar para ordenar la columna de manera ascendente">Región Sucursal</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Comuna Sucursal: Activar para ordenar la columna de manera ascendente">Comuna Sucursal</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Ciudad Sucursal: Activar para ordenar la columna de manera ascendente">Ciudad Sucursal</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Acepta Ingreso: Activar para ordenar la columna de manera ascendente">Fecha Acepta Ingreso</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Usuario Acepta Ingreso: Activar para ordenar la columna de manera ascendente">Usuario Acepta Ingreso</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Fecha Acepta Salida: Activar para ordenar la columna de manera ascendente">Fecha Acepta Salida</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Usuario Acepta Salida: Activar para ordenar la columna de manera ascendente">Usuario Acepta Salida</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px;" aria-label="Estado GPS: Activar para ordenar la columna de manera ascendente">Estado GPS</th></tr></thead><tbody><tr role="row" class="odd"><td class="right_01 sorting_1">1</td><td class=" right_01">389105</td><td>Planta - CD</td><td>130426AS003</td><td>Ejecucion</td><td>14-04-2026</td><td>13-04-2026 15:05</td><td>13-04-2026 15:05</td><td>81.094.100-6</td><td>COLUN</td><td>76.376.879-1</td><td>TRANSPORTES WEBCARGA</td><td>LRTD13</td><td>LRTD13</td><td></td><td>12.191.570-7</td><td>HUMBERTO ELISEO</td><td>RIQUELME SAEZ</td><td class=" right_01"></td><td class=" right_01"></td><td>Terminado</td><td>14-04-2026 03:00</td><td>14-04-2026 00:33</td><td>WEB</td><td>SI</td><td>14-04-2026 06:00</td><td>14-04-2026 06:30</td><td>WEB</td><td>SI</td><td class=" right_01">180</td><td class=" right_01">357</td><td>Carga</td><td>PILU - UHT</td><td>1000</td><td>Plantas</td><td></td><td></td><td></td><td>1000</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Sin Informacion</td></tr><tr role="row" class="even"><td class="right_01 sorting_1">2</td><td class=" right_01">389105</td><td>Planta - CD</td><td>130426AS003</td><td>Ejecucion</td><td>14-04-2026</td><td>13-04-2026 15:05</td><td>13-04-2026 15:05</td><td>81.094.100-6</td><td>COLUN</td><td>76.376.879-1</td><td>TRANSPORTES WEBCARGA</td><td>LRTD13</td><td>LRTD13</td><td></td><td>12.191.570-7</td><td>HUMBERTO ELISEO</td><td>RIQUELME SAEZ</td><td class=" right_01"></td><td class=" right_01"></td><td>Ejecucion</td><td>15-04-2026 08:00</td><td></td><td></td><td>SI</td><td>15-04-2026 11:00</td><td></td><td></td><td>SI</td><td class=" right_01">180</td><td class=" right_01"></td><td>Descarga</td><td>CD San Bernardo</td><td>2800</td><td>Centro Distribución</td><td></td><td></td><td></td><td>2800</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Sin Informacion</td></tr></tbody></table></div><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Mostrando registros del 1 al 2 de un total de 2 registros</div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">Anterior</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" class="page-link">Siguiente</a></li></ul></div></div></div><div class="row"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var dt_tabla;
+    var API_LOGIS  = 'https://suite.wing.cl/api/logistics';
+    var s_empresa  = '105765';
+    var s_usuario  = 'OPERACIONES@WEBCARGA.COM'
+    var id_proceso = '';
+    var titulo     = 'Reporte Completo de Viajes por Transportista';
+    var ipCliente  = '172.31.14.130';
+
+    var s_usuario_admin = '0';
+    var s_usuario_tipo  = '1';
+
+    $(function () {
+        cargar_empresas();
+        cargar_parametros();
+    });
+
+    /*PRIMERA PARTE: FILTROS DE BUSQUEDA*/
+
+    function cargar_empresas() {
+        var nIdEmpresa = s_empresa == 0 ? "TODO" : s_empresa;
+        var datosTx = {
+            "id_empresa" : nIdEmpresa.toString()
+        };
+
+        tx.obtener(API_LOGIS,"empresa.obtener", "2.0.0", datosTx, function(data) {
+            for (let i in data) {
+                $("#f_id_empresa").append($("<option>").attr({
+                    "value" : data[i].ID_EMPRESA
+                }).html(data[i].NOMBRE + " - " + funcionesLibreta.formatearRut(data[i].RUT)));
+            }
+            $("#f_id_empresa").trigger("chosen:updated").attr({"onchange" : "cargar_mandantes();"});
+            if(s_empresa != 0){
+                cargar_mandantes();
+            }
+        });
+       
+    }
+
+    function cargar_parametros() {
+        var datosTx = {
+            "codigo_grupo" : '2'
+        };
+        tx.obtener(API_LOGIS,"parametros.obtener_parametros_defecto", "2.0.0", datosTx, function(data) {
+            for (let i in data) {
+                $("#accion").append($("<option>").attr({
+                    "value" : data[i].CODIGO_ELEMENTO
+                }).html(data[i].DESCRIPCION));
+            }
+            $("#accion").trigger("chosen:updated");
+        });
+    }
+
+    function cargar_mandantes() {
+        $("#f_mandante").find("option").remove();
+        $("#f_mandante").append($("<option>").attr({"value" : "0"}).html("Todos"));
+
+        var nIdEmpresa = s_empresa == 0 ? $("#f_id_empresa").val() : s_empresa;
+
+        if(nIdEmpresa == 0){
+            return;
+        }
+
+        var datosTx = {
+            "id_empresa_mandada" : nIdEmpresa.toString()
+        };
+
+        tx.obtener(API_LOGIS, "empresa.obtener_mandantes", "2.1.0", datosTx, function(data) {
+            for (let i in data) {
+                $("#f_mandante").append($("<option>").attr({
+                    "value" : data[i].ID_EMPRESA_MANDANTE
+                }).html(data[i].NOMBRE.toUpperCase() + " - " + funcionesLibreta.formatearRut(data[i].RUT)));
+            }
+            $("#f_mandante").trigger("chosen:updated").attr({"onchange" : "cargarPlantillas();cargarTurnos();"});
+            cargarPlantillas();
+            cargarTurnos();
+        });
+    }
+
+    function cargarPlantillas(){
+        $("#plantilla").find("option").remove();
+        $("#plantilla").append($("<option>").attr({"value" : "0"}).html("Todos"));
+
+        var nIdEmpresa = s_empresa == 0 ? $("#f_mandante").val() : s_empresa;
+
+        if(nIdEmpresa == 0){
+            return;
+        }
+
+        var datos = {
+            id_empresa   : nIdEmpresa.toString(),
+            id_agrupador : ''
+        };
+        tx.obtener(API_LOGIS, 'plantillas.obtener', '2.0.0', datos, function(data){
+            $select = $('#plantilla').html('');
+            $('<option></option>',{value:0}).html('Todos').appendTo($select);
+            for(i in data){
+                da = data[i];
+                $('<option></option>',{value:da.ID_PLANTILLA}).html(da.NOMBRE_PLANTILLA).appendTo($select);
+            }
+        });
+    }
+
+    function cargarTurnos(){
+        $("#turno").find("option").remove();
+        $("#turno").append($("<option>").attr({"value" : "0"}).html("Todos"));
+
+        var nIdEmpresa = s_empresa == 0 ? $("#f_mandante").val() : s_empresa;
+        if(nIdEmpresa == 0){
+            return;
+        }
+
+        var datos = {
+            id_empresa: nIdEmpresa.toString(),
+        };
+        tx.obtener(API_LOGIS, 'turno.obtener', '2.0.0', datos, function(data){
+            $select = $('#turno').html('');
+            $('<option></option>',{value:0}).html('Todos').appendTo($select);
+            for(i in data){
+                da = data[i];
+                $('<option></option>',{value:da.ID_TURNO}).html(da.NOMBRE).appendTo($select);
+            }
+        });
+    }
+
+    /*SEGUNDA PARTE: TABLAS DE BUSQUEDA*/
+
+    function buscar_listado() {
+        var nIdEmpresaTransp = s_empresa == 0 ? $("#f_id_empresa").val() : s_empresa;
+
+        if(nIdEmpresaTransp == 0){
+            funcionesTema.mostrarMensaje('Debe seleccionar una Empresa', 'warning');
+            $("#contenedor_datos").toggle(false);
+            return;
+        }
+
+        var sTransportista      = $.trim($("#f_id_empresa option:selected").text()).split('-')[0];
+        var nIdEmpresaMandante  = $("#f_mandante").val();
+        var sFechaInicio        = $("#fecha_inicio").val();
+        var sFechaFin           = $("#fecha_fin").val();
+        var nPlantilla          = $("#plantilla").val();
+        var nAccion             = $("#accion").val();
+        var nTurno              = $("#turno").val();
+
+        var nFechas = funcionesFecha.restarFechas("#fecha_inicio", "#fecha_fin");
+        if (nFechas < 0) {
+            funcionesTema.mostrarMensaje("La Fecha de T&eacute;rmino debe ser Mayor o Igual a la Fecha de Inicio.", 'warning');
+            $("#contenedor_datos").toggle(false);
+            return;
+        }
+
+        var datosTx = {
+            "id_empresa_mandante" : nIdEmpresaMandante.toString(),
+            "id_empresa_tta"      : nIdEmpresaTransp.toString(),
+            "fecha_inicio"        : sFechaInicio,
+            "fecha_fin"           : sFechaFin,
+            "accion"              : nAccion.toString(),
+            "id_turno"            : nTurno.toString(),
+            "id_plantilla"        : nPlantilla.toString()
+        }
+
+        tx.obtener(API_LOGIS, "viajes.obtener_completo_transportista", "2.0.0", datosTx, function(data) {
+            armar_tabla(data, sTransportista);
+        });
+
+    }
+
+    function armar_tabla(data, sTransportista) {
+        var tabla = {};
+        //Columnas
+        var columnas = [
+            {title:'N°', data: 'NUM'},
+            /*{title:'Id Viaje', data: null, render: function (d, type, row, meta ) {
+                return '<a href="#" id="viaje_'+d.NUM+'" onclick="funcionesPopup.detalleViaje(' + d.ID_MOVIL + ',' + d.ID_VIAJE +')">' + d.ID_VIAJE + '</a>';
+            }},*/
+            {title:'Id Viaje', data: 'ID_VIAJE'},
+            {title:'Plantilla', data: 'NOMBRE_PLANTILLA'},
+            {title:'Código Viaje', data: 'CODIGO_VIAJE'},
+            {title:'Estado Viaje', data: 'ESTADO_VIAJE'},
+            {title:'Fecha Programa', data: 'FECHA_PROGRAMA'},
+            {title:'Fecha Creación', data: 'FECHA_CREACION'},
+            {title:'Fecha Ejecución', data: 'FECHA_EJECUCION'},
+            {title:'Rut Empresa Mandante', data: 'RUT_EMPRESA_MANDANTE'},
+            {title:'Empresa Mandante', data: 'EMPRESA_MANDANTE'},
+            {title:'Rut Empresa Tta.', data: 'RUT_EMPRESA_TTA'},
+            {title:'Empresa Tta.', data: 'NOMBRE_EMPRESA_TTA'},
+            {title:'Patente Móvil', data: 'PATENTE'},
+            {title:'Código Móvil', data: 'CODIGO'},
+            {title:'Alias Móvil', data: 'ALIAS'},
+            {title:'Rut Conductor', data: 'RUT_PERSONAL'},
+            {title:'Nombre Conductor', data: 'NOMBRE_PERSONAL'},
+            {title:'Apellido Conductor', data: 'APELLIDO_PERSONAL'},
+            {title:'Cantidad de Peonetas', data: 'PEONETAS'},
+            {title:'Turno', data: 'NOMBRE_TURNO'},
+            {title:'Estado Lugar', data: 'ESTADO_LUGAR'},
+            {title:'Fecha Llegada Programada', data: 'FECHA_LLEGADA_PROGRAMADA'},
+            {title:'Fecha Llegada Real', data: 'FECHA_LLEGADA_REAL'},
+            {title:'Fuente Dato Llegada Real', data: 'FUENTE_LLEGADA'},
+            {title:'Cumple OTA', data: 'CUMPLE_OTA'},
+            {title:'Fecha Salida Programada', data: 'FECHA_SALIDA_PROGRAMADA'},
+            {title:'Fecha Salida Real', data: 'FECHA_SALIDA_REAL'},
+            {title:'Fuente Dato Salida Real', data: 'FUENTE_SALIDA'},
+            {title:'Cumple OTD', data: 'CUMPLE_OTD'},
+            {title:'Estadía Programada', data: 'ESTADIA_PROG'},
+            {title:'Estadía Real', data: 'ESTADIA_REAL'},
+            {title:'Acción', data: 'NOMBRE_ACCION'},
+            {title:'Nombre Lugar', data: 'NOMBRE_LUGAR'},
+            {title:'Código Lugar', data: 'CODIGO_LUGAR'},
+            {title:'Tipo Lugar', data: 'TIPO_LUGAR'},
+            {title:'Rut Cliente', data: 'RUT_CLIENTE'},
+            {title:'Nombre Cliente', data: 'NOMBRE_CLIENTE'},
+            {title:'Dirección Sucursal', data: 'DIRECCION_LUGAR'},
+            {title:'Código Sucursal', data: 'CODIGO_LUGAR'},
+            {title:'Región Sucursal', data: 'REGION_LUGAR'},
+            {title:'Comuna Sucursal', data: 'COMUNA_LUGAR'},
+            {title:'Ciudad Sucursal', data: 'CIUDAD_LUGAR'},
+            {title:'Fecha Acepta Ingreso', data: 'FECHA_ACEPTA_INGRESO'},
+            {title:'Usuario Acepta Ingreso', data: 'NOMBRE_ACEPTA_INGRESO'},
+            {title:'Fecha Acepta Salida', data: 'FECHA_ACEPTA_SALIDA'},
+            {title:'Usuario Acepta Salida', data: 'NOMBRE_ACEPTA_SALIDA'},
+            {title:'Estado GPS', data: 'ESTADO_GPS'}
+        ];
+
+        //Ubicar columas y data en tabla
+        tabla.columnas = columnas;
+        tabla.datos    = data;
+
+        //Se configura la exportacion de los datos
+        var boton_formateo = {
+            exportOptions: {
+                format: {
+                    body: function ( data, row, column ) {
+                        if(column == 1){
+                            if (typeof data === 'number' || data instanceof Number){
+                                return data;
+                            } else {
+                                return $(data).html();
+                            }
+                        } else {
+                            return data;
+                        }
+                        
+                    }
+                }
+            }
+        };
+
+        var nombre_tabla = 'Listado de Viajes de la Empresa de Transporte "'+sTransportista.trim()+'"';
+
+        //Crear configuracion
+        var configuracion_tabla = {
+            "otros":{'pivot':true},
+            "buttons": [
+                $.extend( true, {}, boton_formateo, {
+                    extend: 'copyHtml5',
+                    title: nombre_tabla,
+                    text: 'Copiar'
+                }),
+                $.extend( true, {}, boton_formateo, {
+                    extend: 'excelHtml5',
+                    title: nombre_tabla,
+                    text: 'Excel'
+                }),
+                $.extend( true, {}, boton_formateo, {
+                    extend: 'csvHtml5',
+                    title: nombre_tabla,
+                    fieldSeparator: ';',
+                    text: 'CSV'
+                })
+            ],
+            "order": [[ 0, "asc" ]],
+            "columnDefs" : [
+                { targets: [0, 1, 18, 19, 29, 30],  className: 'right_01'},
+                { targets: [8, 10, 15, 35], data: null,
+                  "render": function (data, type, full, meta) {
+                      return (data == null) ? '' : funcionesLibreta.formatearRut(data);
+                  }
+                }
+            ]
+        };
+
+        //Se procede a inicializar la tabla, a la creacion del titulo y a mostrar los datos
+        dt_tabla = $('#div_datos').inicializarTabla(tabla,nombre_tabla,configuracion_tabla);
+        var tabla_id = dt_tabla[0]['id'];
+        $("#listado_label").html(nombre_tabla);
+        dt_tabla.api().columns([0, 1, 18, 19, 29, 30]).header().to$().removeClass('right_01');
+        $(".dataTables_scroll").find("table").css('width', '100%');
+        $('#contenedor_datos').toggle(true);
+
+    }
+
+</script></div>
+        </div>
+    </div>
+    <div id="modal_generico" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg"><div id="modal_content" class="modal-content"></div></div>
+    </div>
+    <div id="modal_generico_small" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm"><div id="modal_content_small" class="modal-content"></div></div>
+    </div>
+</div><div estado="contraido" id="BotonAyuda" class="boton-ayuda btn-primary" onclick="pressBotonAyuda()">
+    <div class="d-flex">
+        <img src="resources/mascota_west.png" alt="Mascota West">
+        <p id="nsc">¿Necesitas ayuda?</p>
+    </div>
+</div></div>
+<div id="label_fecha_actualizacion"></div></body></html>

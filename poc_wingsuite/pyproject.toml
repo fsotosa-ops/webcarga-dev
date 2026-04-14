@@ -20,3 +20,6 @@ dev = [
     "pytest",
     "black"
 ]
+
+[tool.setuptools]
+py-modules = ["main", "config", "schemas", "wingsuite_scraper"]
